@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+<h:head><title>SignUp</title></h:head>
+<h:body>
+	<h1>Welcome to Sign up Page.</h1>
+	<h:form>
+
+		<h:panelGrid id="panel" columns="2" border="0" cellpadding="10"
+			cellspacing="1">  
+First Name: <h:inputText id="fname" value="#{signUp.fname}"
+				required="true">
+			<!--  	<f:validateRequired></f:validateRequired>-->
+				
+			</h:inputText>
+Last Name: <h:inputText id="lname" value="#{signUp.lname}"
+				required="true"></h:inputText>
+			<br></br>
+Email: <h:inputText id="email" value="#{signUp.email}" required="true"></h:inputText>
+			<br></br>
+Mobile No:<h:inputText id="mob" value="#{signUp.mob}" required="true"></h:inputText>
+			<br></br>
+Set Password:<h:inputText id="password" value="#{signUp.password}"
+				minlength="8" required="true">
+				<f:validateLength for="password" minlength="8" />
+			</h:inputText>
+			<br></br>
+			<h:commandButton id="cmd" value="Sign Up"
+				action="#{signUp.saveInDataset}">
+				<br></br>
+				
+			</h:commandButton>
+			<br></br><h:message for="fname" style="color:red"></h:message>
+			<br></br><h:message for="lname" style="color:red"></h:message>
+			<br></br><h:message for="email" style="color:red"></h:message>
+			<br></br><h:message for="mob" style="color:red"></h:message>
+			<br></br><h:message for="password" style="color:red"></h:message>
+		</h:panelGrid> 
+Already Registered?
+<h:link value="LogIn" outcome="index"></h:link>
+
+
+	</h:form>
+
+</h:body>
+</html>

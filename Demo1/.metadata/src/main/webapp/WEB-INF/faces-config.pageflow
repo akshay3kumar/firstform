@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf16177153263240" configfile="/Demo1/src/main/webapp/WEB-INF/faces-config.xml">
+  <nodes xsi:type="pageflow:PFPage" name="index.xhtml" x="328" y="288" id="pf16177345524891" path="/index.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="index2.xhtml" x="432" y="84" id="pf16177345524892" path="/index2.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="index3.xhtml" x="168" y="120" id="pf16177345524893" path="/index3.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="index4.xhtml" x="190" y="423" id="pf16177689846434" path="/index4.xhtml"/>
+</pageflow:Pageflow>
